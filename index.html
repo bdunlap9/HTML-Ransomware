@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Encrypt or Decrypt</title>
+	</head>
+	<body>
+
+		<form method=POST action="server_address">
+			Key 1: <br />
+			<input type="text" name="key1" value="YourAesKey1">
+			<br />
+			Key 2:<br>
+			<input type="text" name="key2" value="YourAesKey2">
+			<br />
+			IV:<br>
+			<input type="text" name="iv" value="YourIV">
+			<br />
+			<br />
+			<input type="submit" value="Submit">
+		</form> 
+
+		<p>
+			#Encrypt <br />
+			To encrypt a website, upload the encrypt.php to the webserver, and then edit(with text editor) the 'invoker.html' and change the POST address to encrypt.php(which you uploaded) <br />
+			<br />
+			Then open the 'Invoker.html' with any browser and enter the 'Key 1, Key 2 & IV' with appropriate values(The keys you want to encrypt the webserver with, IV stands for 'initialization vector' which is needed in cryptography) and click submit
+		</p>
+
+		<p>
+			#Decrypt <br />
+			To decrypt the encrypted webserver, upload the decrypt.php to the webserver and then edit(with text editor) the 'invoker.html' to change the post address to decrypt.php(which you uploaded) <br />
+			<br />
+			Then open 'Invoker.html' and enter the appropriate key values(The same ones used to encrypt the webserver or it can lead to data loss) and click submit
+		</p>
+	</body>
+</html>
